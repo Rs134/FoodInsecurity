@@ -1,0 +1,351 @@
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(8, 8, 103);
+    font-family: Times New Roman;
+    color: white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(37, 36, 36);
+    border-bottom: 5px solid rgb(14, 14, 14);
+    border-top: 5px solid rgb(14, 14, 14);
+}
+
+.navbar ul li {
+    padding: 10px;
+
+}
+
+.navbar ul li a {
+    color:rgb(255, 255, 255);
+    font-size: 32px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: lightblue;
+
+
+}
+
+.navbar ul li a:hover {
+    font-weight: bold;
+    color: orange;
+}
+
+
+#theme-button {
+    float: right;
+    color: white;
+    justify-content: center;
+    font-size: 20px;
+    background-color:  rgb(52, 184, 214);
+    color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#theme-button:hover{
+    background-color: orange;
+}
+
+
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.header-container {
+    margin: 55px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#header-img img{
+    padding-top: 140px;
+    width: 700px;
+}
+
+.header-item:nth-of-type(2) {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.header-item:nth-of-type(3) {
+    color: lightblue;
+    font-size: 30px;
+}
+
+.header-button button{
+    background-color:  rgb(52, 184, 214);
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+.header-button button:hover{
+    background-color: orange;
+}
+
+.About-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+  width: 100%;
+}
+
+.About-item:nth-of-type(1) {
+    color: orange;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+
+.About-item:nth-of-type(3) {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.data-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#data-img{
+    width: 100%;
+}
+
+#data-img img{
+    width: 800px;
+    height: 500px;
+    margin-right: 50px;
+}
+
+.data-caption{
+    width: 100%;
+    padding-right: 20px;
+}
+
+.data-caption p{
+    color: lightblue;
+    font-size: 29px;
+}
+
+.data-list{
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.data-list ul{
+    list-style-type: none;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.data-list ul li{
+    font-size: 30px;
+}
+
+.impact-heading{
+    color: orange;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 80px;
+}
+.impact-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+}
+
+.impact-item:nth-of-type(1){
+    background-color: rgb(72, 71, 71);
+    border: 1px solid white;
+}
+
+.impact-item:nth-of-type(2){
+    background-color: black;
+    border: 1px solid white;
+    
+}
+
+.impact-item:nth-of-type(3){
+    background-color: rgb(72, 71, 71);
+    border: 2px solid white;
+}
+
+.subheadings{
+    color: orange;
+    font-size: 30px;
+    margin-inline-start: 20px;
+    padding-top: 80px;
+}
+.impact-subheading{
+    color: lightblue;
+    font-size: 20px;
+}
+
+.impact-p{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.impact-img img{
+    width: 600px;
+    height: 350px;
+}
+
+.revealable{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.active {
+    transform: translateY(0px); 
+    opacity: 1; 
+}
+
+.petition{
+    margin-inline-start: 20px;
+    padding-top: 80px;
+}
+
+.petition h2{
+    color: orange;
+    font-size: 30px;
+}
+
+.petition-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100;
+    padding-bottom: 50px;
+    font-size: 20px;
+    
+}
+
+.petition-para{
+    width: 55%;
+    padding-right: 10px;
+}
+
+.petition-para p{
+    color: lightblue;
+    line-height: 25px;
+}
+
+.signatures{
+    width: 45%;
+    padding-right: 10px;
+    color: orange;
+}
+
+.signaturesP{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.signaturesP input{
+    border: 5px solid black;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    color: rgb(0, 185, 247);
+}
+
+
+.error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    background:red;
+  }
+
+  #sign-now-button{
+    background-color:  rgb(52, 184, 214);
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+
+  #sign-now-button:hover{
+    background-color: orange;
+  }
+
+  /* the modal that covers the background and prevents user interactions */
+.modal {
+    display: none; /* hides the modal from view by default*/
+    position: fixed; /* keeps the modal in one place */
+    z-index: 2; /* positions the modal on top of all other elements on the screen */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+    flex-direction: column; /* these flexbox rules center the content on the screen */
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  /* box that contains all the content and images */
+  .modal-content {
+    background-color: lightsteelblue; /* update the colors and font sizes as you like */
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    display: flex; /* adds flexbox to center all items */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #thanks-modal-content {
+    width: 20rem; /* sets a default width for the text container */
+  }
+  
+  #modal-text-container {
+    display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
